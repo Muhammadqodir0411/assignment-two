@@ -264,7 +264,7 @@
     justify-content: end;
     gap: 10px;
     position: absolute;
-    top: 20%;
+    top: 22%;
     left: 67%;
     transform: translate(-50%, -50%);
 }
@@ -273,7 +273,7 @@
     display: flex;
     gap: 10px;
     position: absolute;
-    top: 38%;
+    top: 43%;
     left: 40%;
     transform: translate(-50%, -50%)
 }
@@ -283,7 +283,7 @@
     justify-content: center;
     gap: 10px;
     position: absolute;
-    bottom: 37%;
+    top: 65%;
     left: 47%;
     transform: translate(-50%, -50%)
 }
