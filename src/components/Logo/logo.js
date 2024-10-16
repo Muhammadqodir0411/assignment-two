@@ -34,7 +34,7 @@ const logo = () => {
                     <img src={start} alt="start-img" width={24} height={24} />
                     <p className='text-zinc-300'><strong>Favorite</strong></p>
                 </div>
-                <div className='flex mt-20 px-3 gap-4'>
+                <div className='flex mt-5 px-3 gap-4'>
                     <img src={community} alt="community-img" width={24} height={24} />
                     <p className='text-zinc-300'><strong>Community</strong></p>
                 </div>
@@ -42,11 +42,11 @@ const logo = () => {
                     <img src={explore} alt="explore-img" width={24} height={24} />
                     <p className='text-zinc-300'><strong>Explore</strong></p>
                 </div>
-                <div className='flex mt-28 px-3 gap-4'>
+                <div className='flex mt-36 px-3 gap-4'>
                     <img src={paper} alt="Paper-img" width={24} height={24} />
                     <p className='text-zinc-300'><strong>Document</strong></p>
                 </div>
-                <div className='flex mt-24 px-3 gap-4'>
+                <div className='flex mt-5 px-3 gap-4'>
                     <img src={privacy} alt="privacy-img" width={24} height={24} />
                     <p className='text-zinc-300'><strong>Privacy</strong></p>
                 </div>

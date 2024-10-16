@@ -25,7 +25,7 @@ const nav = () => {
 
 
       </div>
-      <hr className='mt-5'/>
+      <hr className='mt-4'/>
     </>
   )
 }

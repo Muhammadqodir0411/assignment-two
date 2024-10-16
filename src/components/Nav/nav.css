@@ -10,9 +10,10 @@
 
 .nav-input-box {
     display: flex;
+    align-items: center;
     background-color: white;
     border-radius: 10px;
-    width: 386px;
+    width: 280px;
     padding: 15px;
     gap: 20px;
     border: 1px solid #D7DBE7;

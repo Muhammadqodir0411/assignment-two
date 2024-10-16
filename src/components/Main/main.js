@@ -10,7 +10,6 @@ import arrows from '../../assets/arrows.png'
 import game from '../../assets/game.png'
 import social from '../../assets/social.png'
 import category from '../../assets/category.png'
-import line from '../../assets/line.png'
 import click from '../../assets/click.png'
 
 
@@ -20,50 +19,59 @@ const main = () => {
     <div className='main-container'>
       <div className='mt-4'>
         <h1 className='text-5xl'>Welcome Back</h1>
-        <p className='mt-3'><strong>We have a lot of work to day, what do you what to start with?</strong></p>
+        <p className='mt-3'>We have a lot of work to day, what do you what to start with?</p>
 
         <div className='flex gap-4 mt-4'>
           <div className='main-box'>
             <div className='flex justify-between'>
-              <img src={discount} alt="discount-img" width={32} height={32} />
-              <div>
-                <p><strong>Manual Trading</strong></p>
-                <p>Stock Wallet</p>
+              <div className='flex items-center gap-2'>
+                <img src={discount} alt="discount-img" width={32} height={32} />
+                <div>
+                  <p><strong>Manual Trading</strong></p>
+                  <p>Stock Wallet</p>
+                </div>
               </div>
               <span className='text-emerald-400'>-21.73%</span>
             </div>
-            <div className='flex justify-around mt-5'>
+            <div className='flex items-center justify-evenly mt-5'>
               <p>32 Stocks</p>
+              <p className='trading'></p>
               <p>124 Type</p>
             </div>
           </div>
 
           <div className='main-box'>
             <div className='flex justify-between'>
-              <img src={ticket} alt="ticket-img" width={32} height={32} />
-              <div>
-                <p><strong>Manual Trading</strong></p>
-                <p>Stock Wallet</p>
+              <div className='flex items-center gap-2'>
+                <img src={ticket} alt="ticket-img" width={32} height={32} />
+                <div>
+                  <p><strong>Manual Trading</strong></p>
+                  <p>Stock Wallet</p>
+                </div>
               </div>
               <span className='text-emerald-400'>-21.73%</span>
             </div>
-            <div className='flex justify-around mt-5'>
+            <div className='flex items-center justify-evenly mt-5'>
               <p>32 Stocks</p>
+              <p className='trading'></p>
               <p>124 Type</p>
             </div>
           </div>
 
           <div className='main-box'>
             <div className='flex justify-between'>
-              <img src={buy} alt="buy-img" width={32} height={32} />
-              <div>
-                <p><strong>Manual Trading</strong></p>
-                <p>Stock Wallet</p>
+              <div className='flex items-center gap-2'>
+                <img src={buy} alt="buy-img" width={32} height={32} />
+                <div>
+                  <p><strong>Manual Trading</strong></p>
+                  <p>Stock Wallet</p>
+                </div>
               </div>
               <span className='text-emerald-400'>-21.73%</span>
             </div>
-            <div className='flex justify-around mt-5'>
+            <div className='flex items-center justify-evenly mt-5'>
               <p>32 Stocks</p>
+              <p className='trading'></p>
               <p>124 Type</p>
             </div>
           </div>
@@ -99,14 +107,20 @@ const main = () => {
 
           <div className='mt-4'>
             <div className='flex justify-between'>
-              <p className='text-zinc-400'>Name</p>
-              <p className='text-zinc-400'>Status</p>
-              <p className='text-zinc-400'>24h Change</p>
-              <p className='text-zinc-400'>Current Price</p>
-            </div>
+              <div className='flex justify-between gap-44'>
+                <p className='text-zinc-400'>Name</p>
+                <p className='text-zinc-400'>Status</p>
+              </div>
+              <div className='flex justify-between gap-32'>
+                <p className='text-zinc-400'>24h Change</p>
+                <p className='text-zinc-400'>Current Price</p>
+              </div>
 
-            <div className='flex mt-5 items-center justify-between'>
-              <div className='flex gap-4'>
+            </div>
+            <hr className='mt-2 text-zinc-400' />
+
+            <div className='flex mt-4 items-center justify-between'>
+              <div className='flex items-center gap-4'>
                 <img src={texnika} alt="texnika-img" width={32} height={32} />
                 <div>
                   <p><strong>Macbook Pro 16 inch (2020) For Sale</strong></p>
@@ -127,8 +141,8 @@ const main = () => {
             </div>
             <hr className='mt-4 text-zinc-400' />
 
-            <div className='flex mt-5 items-center justify-between'>
-              <div className='flex gap-4'>
+            <div className='flex mt-4 items-center justify-between'>
+              <div className='flex items-center gap-4'>
                 <img src={texnika} alt="texnika-img" width={32} height={32} />
                 <div>
                   <p><strong>Gaming Chair, local pickup only</strong></p>
@@ -149,8 +163,8 @@ const main = () => {
             </div>
             <hr className='mt-4 text-zinc-400' />
 
-            <div className='flex mt-5 items-center justify-between'>
-              <div className='flex gap-4'>
+            <div className='flex mt-4 items-center justify-between'>
+              <div className='flex items-center gap-4'>
                 <img src={texnika} alt="texnika-img" width={32} height={32} />
                 <div>
                   <p><strong>Brand New Bike, Local buyer only</strong></p>
@@ -171,8 +185,8 @@ const main = () => {
             </div>
             <hr className='mt-4 text-zinc-400' />
 
-            <div className='flex mt-5 items-center justify-between'>
-              <div className='flex gap-4'>
+            <div className='flex mt-4 items-center justify-between'>
+              <div className='flex items-center gap-4'>
                 <img src={texnika} alt="texnika-img" width={32} height={32} />
                 <div>
                   <p><strong>Dell Computer Monitor</strong></p>
@@ -193,8 +207,8 @@ const main = () => {
             </div>
             <hr className='mt-4 text-zinc-400' />
 
-            <div className='flex mt-5 items-center justify-between'>
-              <div className='flex gap-4'>
+            <div className='flex mt-4 items-center justify-between'>
+              <div className='flex items-center gap-4'>
                 <img src={texnika} alt="texnika-img" width={32} height={32} />
                 <div>
                   <p><strong>Playstation 4 Limited Edition (with game)</strong></p>
@@ -213,12 +227,10 @@ const main = () => {
                 <p className='text-red-600'>$52,221.00</p>
               </div>
             </div>
-            <hr className='mt-4 text-zinc-400' />
           </div>
-
         </div>
 
-        <div className='mt-4 flex justify-between'>
+        <div className='mt-5 flex justify-between'>
           <div className='gameing-box'>
             <h3><strong>Gaming</strong></h3>
             <div className='flex gap-3 mt-3'>
@@ -288,7 +300,7 @@ const main = () => {
               </div>
             </div>
 
-            <img src={line} alt="line-img" width={2} height={35} />
+            <p className='category-line'></p>
 
             <div className='flex items-center gap-4'>
               <img src={category} alt="category-img" width={36} height={36} />
@@ -297,10 +309,11 @@ const main = () => {
                 <p>Category</p>
               </div>
             </div>
-
           </div>
 
-          <div className='flex items-center gap-4 mt-5'>
+          <hr className='text-zinc-300 mt-4' />
+
+          <div className='flex items-center gap-4 mt-4'>
 
             <div className='flex items-center gap-4'>
               <img src={category} alt="category-img" width={36} height={36} />
@@ -310,7 +323,7 @@ const main = () => {
               </div>
             </div>
 
-            <img src={line} alt="line-img" width={2} height={35} />
+            <p className='category-line'></p>
 
             <div className='flex items-center gap-4'>
               <img src={category} alt="category-img" width={36} height={36} />
@@ -323,13 +336,13 @@ const main = () => {
           </div>
         </div>
 
-        <div className='mt-4'>
+        <div className='mt-5'>
           <div className='flex justify-between'>
             <h3 className='text-2xl'>Sep 2023</h3>
             <img src={click} alt="click" width={56} height={24} />
           </div>
 
-          <div className='calendar-wrap mt-4'>
+          <div className='calendar-wrap mt-5'>
             <div className='flex items-center justify-between px-4 py-3'>
               <p className='text-zinc-300'>Sun</p>
               <p className='text-zinc-300'>Mon</p>
@@ -340,48 +353,57 @@ const main = () => {
               <p className='text-zinc-300'>Sat</p>
             </div>
             <div className='flex items-center justify-between mt-1 px-4 pb-3'>
-            <p className='text-zinc-300'>18</p>
-            <p className='text-zinc-300'>18</p>
-            <p className='text-zinc-300'>18</p>
-            <p className='bg-white'><strong>18</strong></p>
-            <p className='text-zinc-300'>18</p>
-            <p className='text-zinc-300'>18</p>
-            <p className='text-zinc-300'>18</p>
+              <p className='text-zinc-300'>18</p>
+              <p className='text-zinc-300'>18</p>
+              <p className='text-zinc-300'>18</p>
+              <p className='bg-white'><strong>18</strong></p>
+              <p className='text-zinc-300'>18</p>
+              <p className='text-zinc-300'>18</p>
+              <p className='text-zinc-300'>18</p>
+            </div>
           </div>
-          </div>
 
-          <div className='diagrama-wrap p-4'>
-            <div className='green-box'>
-              <div className='green'>
-                <p className='white'></p>
+          <div className='diagrama-container'>
+            <div className='pipe-wrap'>
+              <p className='pipe'></p>
+              <p className='pipe'></p>
+              <p className='pipe'></p>
+              <p className='pipe'></p>
+              <p className='pipe'></p>
+            </div>
+            <div className='diagrama-wrap'>
+              <div className='green-box'>
+                <div className='green'>
+                  <p className='white'></p>
+                </div>
+                <div className='pink'>
+                  <p className='white'></p>
+                </div>
               </div>
-              <div className='pink'>
-                <p className='white'></p>
+
+              <div className='pink-box'>
+                <div className='green'>
+                  <p className='white'></p>
+                </div>
+                <div className='pinka'>
+                  <p className='white'></p>
+                </div>
+                <div className='greena'>
+                  <p className='white'></p>
+                </div>
+              </div>
+
+              <div className='yellow-box'>
+                <div className='yellow'>
+                  <p className='white'></p>
+                </div>
+                <div className='pinkb'>
+                  <p className='white'></p>
+                </div>
               </div>
             </div>
 
-            <div className='pink-box'>
-              <div className='green'>
-                <p className='white'></p>
-              </div>
-              <div className='pinka'>
-                <p className='white'></p>
-              </div>
-              <div className='greena'>
-                <p className='white'></p>
-              </div>
-            </div>
-
-            <div className='yellow-box'>
-              <div className='yellow'>
-                <p className='white'></p>
-              </div>
-              <div className='pinkb'>
-                <p className='white'></p>
-              </div>
-            </div>
-
-            <div className='timer-box'>
+            <div className='timer-box mt-1'>
               <p>:<strong>00</strong></p>
               <p><strong>12:00</strong></p>
               <p><strong>13:00</strong></p>
@@ -407,7 +429,7 @@ const main = () => {
             </div>
 
           </div>
-          
+
         </div>
       </div>
     </div>
