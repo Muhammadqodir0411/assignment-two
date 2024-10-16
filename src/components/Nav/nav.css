@@ -1,0 +1,24 @@
+.nav-container{
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-input-box {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    width: 386px;
+    padding: 15px;
+    gap: 20px;
+    border: 1px solid #D7DBE7;
+}
+
+.nav-input {
+    border: none;
+    outline: none;
+}
